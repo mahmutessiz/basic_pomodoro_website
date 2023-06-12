@@ -65,3 +65,27 @@
 .pause{
     display: none;
 }
+
+/* settings container */
+
+.settings-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 3rem;
+
+}
+
+.icon-settings{
+    animation: settingIcon cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@keyframes settingIcon {
+    from {
+        rotate: 0deg;
+    }
+    to{rotate: 360deg;}
+}
